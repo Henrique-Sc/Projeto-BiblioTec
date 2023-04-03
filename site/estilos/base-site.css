@@ -4,6 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+:root
 
 nav {
     width: 100%;
@@ -45,7 +46,7 @@ nav {
 
 main {
     padding: 20px;
-    /* min-height: 300px; */
+    min-height: 80vh;
 }
 
 
