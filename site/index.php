@@ -18,7 +18,8 @@
 
     <main>
         <?php
-            if (isset($_GET['pagina'])) {
+            switch (isset())
+            if (isset($_GET['livros'])) {
                 
             }
         ?>
