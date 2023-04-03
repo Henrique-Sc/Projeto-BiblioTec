@@ -1,5 +1,5 @@
 <nav>
-    <div class="img_logo"><img src="img/biblioteca-logo.png" alt="logo"></div>
+    <div class="img_logo"><img src="img/biblioteca-logo.png" alt="Logo da bibliotec"></div>
 
     <ul>
         <li><a href="?alunos">Alunos</a></li>
