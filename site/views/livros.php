@@ -1,11 +1,12 @@
 <?php
-   include('../db.php');
    // Criar a consulta
    $query = "SELECT * FROM LIVRO";
    $consulta_livros = mysqli_query($conexao, $query);
 ?>
 
 <!-- Tabela de livros -->
+<h2>Livros</h2>
+
 <table border="1">
    <!-- TÍTULOS -->
    <tr>
