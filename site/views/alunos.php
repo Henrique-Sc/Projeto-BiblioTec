@@ -7,7 +7,7 @@
 <!-- TABELA ALUNOS -->
 <h2>Alunos</h2>
 
-<table border="1">
+<table>
     <tr>
       <th>RM</th>            <!-- 1 -->
       <th>NOME</th>          <!-- 2 -->
