@@ -28,7 +28,7 @@ nav {
         height: 60px;
     }
 
-    nav ul {
+    .nav-itens {
         float: right;
         list-style: none;
         height: 80px;
@@ -37,16 +37,33 @@ nav {
         align-items: center;
     }
 
-        nav ul li {
+        .nav-item {
             display: inline;
             margin-inline-start: 20px;
             margin-inline-end: 20px;
         }
 
+            .nav-item a {
+                color: white;
+                text-decoration: none;
+            }
+
+            .nav-item a:hover {
+                text-decoration: underline;
+                text-underline-offset: 2px;
+            }
+
 
 main {
     padding: 20px;
     min-height: 80vh;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    padding-top: 1em;
+    padding-bottom: 0.8em;
 }
 
 
