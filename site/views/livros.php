@@ -7,7 +7,7 @@
 <!-- Tabela de livros -->
 <h2>Livros</h2>
 
-<table border="1">
+<table>
    <!-- TÍTULOS -->
    <tr>
       <th>ISBN</th>        <!-- 1 -->
