@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="estilos/base-site.css">
     <link rel="stylesheet" href="estilos/table.css">
+
+    <script src="https://kit.fontawesome.com/55197c00fe.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -19,18 +21,29 @@
     <main>
         <?php  
             // Incluir as views (conteúdos)
-            if (isset($_GET['alunos'])) {
-                include_once('views/alunos.php');
-
-            } else if (isset($_GET['livros'])) {
-                include_once('views/livros.php');
-
-            } else if (isset($_GET['emprestimos'])) {
-                include_once('views/emprestimos.php');
-
+            if (isset($_GET['pagina'])) {
+                $pagina = $_GET['pagina'];
             } else {
-                include_once('views/home.php');
+                $pagina = 'home';
             }
+
+            switch ($pagina) {
+                case 'alunos':
+                    include_once('views/alunos.php');
+                    break;
+                
+                case 'livros':
+                    include_once('views/livros.php'); 
+                    break;
+                case 'emprestimos':
+                    include_once('views/emprestimos.php');
+                    break;
+                
+                default:
+                    include_once('views/home.php');
+                    break;
+            }
+
         ?>
     </main>
     
