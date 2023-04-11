@@ -9,10 +9,6 @@
     <p><input type="text" name="" id="" placeholder="Curso"></p>
     <p><input type="text" name="" id="" placeholder="Série"></p>
     <p><input type="text" name="" id="" placeholder="Ano de ingresso"></p>
-    <p><input type="text" name="" id="" placeholder="RM"></p>
+    <p><input type="text" name="" id="" placeholder="Período"></p>
     <p><input type="submit" value="Enviar"></p>
 </form>
-
-   
-    <th>ANO_INGRESSO</th>  <!-- 9 -->
-    <th>PERIODO</th>       <!-- 10 -->
