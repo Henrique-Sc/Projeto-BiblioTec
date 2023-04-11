@@ -24,16 +24,17 @@
    <?php 
         while ($linha = mysqli_fetch_array($consulta_alunos)) {
             echo "<tr>";
-                echo '<td>'.$linha["RM"].'</td>';  // 1
-                echo '<td>'.$linha["NOME"].'</td>';  // 1
-                echo '<td>'.$linha["TELEFONE"].'</td>';  // 1
-                echo '<td>'.$linha["DATA_NASC"].'</td>';  // 1
-                echo '<td>'.$linha["EMAIL"].'</td>';  // 1
-                echo '<td>'.$linha["SENHA"].'</td>';  // 1
-                echo '<td>'.$linha["CURSO"].'</td>';  // 1
-                echo '<td>'.$linha["SERIE"].'</td>';  // 1
-                echo '<td>'.$linha["ANO_INGRESSO"].'</td>';  // 1
-                echo '<td>'.$linha["PERIODO"].'</td>';  // 1
+                echo '<td>'.$linha["RM"].'</td>';
+                echo '<td>'.$linha["NOME"].'</td>';
+                echo '<td>'.$linha["TELEFONE"].'</td>';
+                echo '<td>'.$linha["DATA_NASC"].'</td>';
+                echo '<td>'.$linha["EMAIL"].'</td>';
+                echo '<td>'.$linha["SENHA"].'</td>';
+                echo '<td>'.$linha["CURSO"].'</td>';
+                echo '<td>'.$linha["SERIE"].'</td>';
+                echo '<td>'.$linha["ANO_INGRESSO"].'</td>';
+                echo '<td>'.$linha["PERIODO"].'</td>';
+            echo "</tr>";
         }
    ?>   
 </table>
