@@ -5,7 +5,7 @@
 ?>
 
 <!-- TABELA ALUNOS -->
-<h2>Alunos</h2>
+<h2>Alunos</h2><i class="fa-solid fa-plus plus"></i>
 
 <table>
     <tr>
