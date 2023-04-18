@@ -64,6 +64,7 @@ h2 {
   font-size: 1.75rem;
   padding-top: 1em;
   padding-bottom: 0.8em;
+  display: inline-block;
 }
 
 
@@ -77,3 +78,9 @@ footer {
   color: white;
 }
 
+.plus {
+  margin-left: 15px;
+  font-size: 22px;
+  color: black;
+  cursor: pointer;
+}
