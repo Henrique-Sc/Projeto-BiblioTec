@@ -1,29 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+    $sql = 'SELECT * FROM LIVROS';
+    // $conn = mysqli_query();
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inserir Empréstimos</title>
+<form action="views/cadastrar/cadastrar_emprestimos.php" method="post">
+    <h2>Cadastro de emprestimo</h2>
 
-    <script>
+    <!-- 
+        1. Caixa de pesquisa que filtra os livros disponíveis
+            - Consultar usando o php, converter para array em js
+            - filtro pelo js
+     -->
 
-    </script>
-</head>
+    <!-- Títulos dos livros -->
+    <div class="form-group">
+        <input type="text" name="" id="" placeholder="Título do livro" required>
+    </div>
 
-<body>
-    <form action="home.php" method="post">
-        <h2>Cadastro de emprestimo</h2>
+    <!-- RM -->
+    <div class="form-group">
+        <input type="text" name="" id="" placeholder="RM" required>
+    </div>
 
-        <div class="form-group"><input type="text" name="" id="" placeholder="Título"></div>
-        <div class="form-group"><input type="text" name="" id="" placeholder="RM"></div>
-        <div class="form-group"><input type="text" name="" id="" placeholder="Nome"></div>
-        <div class="form-group"><input type="text" name="" id="" placeholder="dd/mm/aaaa" required></div>
-        <div class="form-group"><input type="text" name="" id="" placeholder="dd/mm/aaaa" required></div>
-        <div class="form-group"><input type="number" name="" id="" placeholder="Multa"></div>
-        <div class="form-group"><input type="submit" value="Enviar"></div>
-    </form>
-</body>
+    <!-- Nome -->
+    <div class="form-group">
+        <input type="text" name="" id="" placeholder="Nome" required>
+    </div>
 
-</html>
+    <!-- Data de devolução -->
+    <div class="form-group">
+        <label for="data_devolucao">Data de devolução</label>
+        <input type="date" name="" id="data_devolucao" required>
+    </div>
+    
+    <div class="form-group">
+        <input type="submit" value="Enviar">
+    </div>
+</form>
