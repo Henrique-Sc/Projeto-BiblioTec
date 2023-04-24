@@ -5,7 +5,7 @@
 ?>
 
 <!-- TABELA ALUNOS -->
-<h2>Alunos</h2><i class="fa-solid fa-plus plus"></i>
+<h2>Alunos</h2>
 
 <table>
     <tr>
@@ -38,3 +38,5 @@
         }
    ?>   
 </table>
+
+<a href="?pagina=form_aluno"><button class="cadastrar">Cadastrar aluno</button></a>

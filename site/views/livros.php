@@ -35,3 +35,5 @@
       }
    ?>
 </table>
+
+<a href="?pagina=form_livro"><button class="cadastrar">Cadastrar livro</button></a>

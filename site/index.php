@@ -29,10 +29,12 @@
             }
 
             switch ($pagina) {
+                case 'home':
+                    include_once('views/home.php');
+                    break;
                 case 'alunos':
                     include_once('views/alunos.php');
                     break;
-                
                 case 'livros':
                     include_once('views/livros.php'); 
                     break;
@@ -40,12 +42,18 @@
                     include_once('views/emprestimos.php');
                     break;
                 
-                case 'form_livros':
+                case 'form_aluno':
+                    include_once('views/cadastrar/alunos.php');
+                    break;
+                case 'form_livro':
                     include_once('views/cadastrar/livros.php');
+                    break;
+                case 'form_emprestimo':
+                    include_once('views/cadastrar/emprestimos.php');
                     break;
                     
                 default:
-                    include_once('views/home.php');
+                    include_once('views/error404.php');
                     break;
             }
 

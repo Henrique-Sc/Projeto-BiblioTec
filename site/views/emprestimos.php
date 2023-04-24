@@ -37,3 +37,5 @@
     }
    ?>
 </table>
+
+<a href="?pagina=form_emprestimo"><button class="cadastrar">Cadastrar emprestimo</button></a>

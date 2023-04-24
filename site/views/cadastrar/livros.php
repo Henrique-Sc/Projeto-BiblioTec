@@ -20,7 +20,8 @@
     <body>
         <div class="container">
             <form action="" method="post">
-                <h1>Cadastro de Livros</h1>
+                <h2>Cadastro de Livros</h2>
+                
                 <div class="form-group">
                     <input type="text" name="isbn" placeholder="ISBN">
                 </div>
@@ -45,6 +46,8 @@
                 <div class="form-group">
                     <button type="submit">Enviar</button>
                 </div>
+            </form>
+        </div>
     </body>
     </html>
     
