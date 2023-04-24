@@ -19,6 +19,7 @@
     ?>
 
     <main>
+        
         <?php  
             // Incluir as views (conteúdos)
             if (isset($_GET['pagina'])) {
