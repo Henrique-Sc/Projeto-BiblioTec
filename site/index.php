@@ -43,13 +43,13 @@
                     break;
                 
                 case 'form_aluno':
-                    include_once('views/cadastrar/alunos.php');
+                    include_once('views/cadastrar/form_alunos.php');
                     break;
                 case 'form_livro':
-                    include_once('views/cadastrar/livros.php');
+                    include_once('views/cadastrar/form_livros.php');
                     break;
                 case 'form_emprestimo':
-                    include_once('views/cadastrar/emprestimos.php');
+                    include_once('views/cadastrar/form_emprestimos.php');
                     break;
                     
                 default:
