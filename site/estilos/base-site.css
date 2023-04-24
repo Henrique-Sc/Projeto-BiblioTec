@@ -4,8 +4,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-:root
-
+/* NAVBAR */
 nav {
   width: 100%;
   min-height: 80px;
@@ -52,8 +51,10 @@ nav {
               text-decoration: underline;
               text-underline-offset: 2px;
           }
+/* NAVBAR */
 
 
+/* CONTEÚDO */
 main {
   padding: 20px;
   min-height: 80vh;
@@ -62,10 +63,24 @@ main {
 
 h2 {
   font-size: 1.75rem;
-  padding-top: 1em;
-  padding-bottom: 0.8em;
-  display: inline-block;
+  padding: 1em 0 0.8em 0;
 }
+
+p {
+  font-size: 1rem;
+  padding: 1em 0 0.8em 0;
+}
+
+button.cadastrar {
+  margin: 25px 0 25px 0;
+  padding: 10px 30px 10px 30px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  box-shadow: 1px 2px 7px rgb(123, 123, 123);
+  cursor: pointer;
+}
+/* CONTEÚDO */
 
 
 footer {
@@ -76,11 +91,4 @@ footer {
   align-items: center;
   background: rgb(95, 92, 92);
   color: white;
-}
-
-.plus {
-  margin-left: 15px;
-  font-size: 22px;
-  color: black;
-  cursor: pointer;
 }
