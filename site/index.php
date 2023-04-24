@@ -40,6 +40,10 @@
                     include_once('views/emprestimos.php');
                     break;
                 
+                case 'form_livros':
+                    include_once('views/cadastrar/livros.php');
+                    break;
+                    
                 default:
                     include_once('views/home.php');
                     break;
