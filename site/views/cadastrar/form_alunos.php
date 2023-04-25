@@ -46,9 +46,10 @@
         <div class="form-group">
             <input type="text" name="perio" id="" placeholder="Período">
         </div>
-        <div class="form-group">
-            <input type="submit" value="Enviar">
-        </div>
+
+    <div class="form-group">
+        <button type="submit">Enviar</button>
+    </div>
     </form>
 </body>
 

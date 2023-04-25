@@ -15,7 +15,7 @@
     $query = "INSERT INTO livro (ISBN, TITULO, AUTOR, EDITORA, GENERO, ANO, EXEMPLAR, SITUACAO) VALUES ('$isbn', '$titulo', '$autor', '$editora', '$genero', $ano, $exemplares, '$situacao')";
     mysqli_query($conexao, $query);
 
-    
+    header('location:index.php?pagina=livros');
 
 
 ?>
