@@ -14,7 +14,7 @@
 <body>
 
     <?php
-        include('db.php');
+        include('database/db.php');
         include('navbar.php')
     ?>
 
