@@ -8,6 +8,8 @@
 
     <link rel="stylesheet" href="estilos/base-site.css">
     <link rel="stylesheet" href="estilos/table.css">
+    <link rel="stylesheet" href="estilos/form.css">
+
 
     <script src="https://kit.fontawesome.com/55197c00fe.js" crossorigin="anonymous"></script>
 </head>

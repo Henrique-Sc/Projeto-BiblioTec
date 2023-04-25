@@ -1,5 +1,5 @@
 <?php 
-    include('lib/forms.php');
+    include('../../lib/forms.php');
     
     /*
         1. Verificar se o RM existe
