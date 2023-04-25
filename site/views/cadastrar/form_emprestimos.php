@@ -37,7 +37,7 @@
     </div>
     
     <div class="form-group">
-        <input type="submit" value="Enviar">
+        <button type="submit">Enviar</button>
     </div>
 </form>
 
