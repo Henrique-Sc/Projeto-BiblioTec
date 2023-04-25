@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <form action="home.php" method="post">
+    <form action="views/cadastrar/cadastrar_alunos.php" method="post">
         <h2>Cadastro de aluno</h2>
         
         <div class="form-group">
