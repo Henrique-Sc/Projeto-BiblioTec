@@ -1,7 +1,8 @@
 <?php 
-    $sql = 'SELECT * FROM LIVRO.TITULO';
-    $consulta_livro = mysqli_query($conexao, $sql);
-    // echo 
+    $sql = "SELECT livro.id_livro, livro.titulo FROM LIVRO";
+    $consulta_livros = mysqli_query($conexao, $sql);
+    
+
 ?>
 
 <h2>Cadastro de emprestimo</h2>
@@ -14,12 +15,17 @@
 <form action="views/cadastrar/cadastrar_emprestimos.php" method="post">
     <div class="form-group">
         <input type="text" name="" id="titulo_livro" placeholder="Título do livro" oninput="searchLivro(this)" required>
+        <select name="titulo_livro" id="">
+            <?php 
+                while ($row = mysqli_fetch_array($consulta_livros)) {
+                    echo "<option value='$row[1]'>$row[1]</option>";
+                }
+            ?>
+        </select>
     </div>
-    <div id="caixa-resultado">
-        <div class="">Livro 1</div>
-        <div class="">Livro 2</div>
-        <div class="">Livro 3</div>
-    </div>
+    <!-- <div id="caixa-resultado">
+
+    </div> -->
 
     <div class="form-group">
         <input type="text" name="" id="" placeholder="RM" required>
@@ -38,26 +44,3 @@
         <input type="submit" value="Enviar">
     </div>
 </form>
-
-<script>
-    const caixa_resultado = document.getElementById('caixa-resultado');
-    const search_livro = document.getElementById('search_livro');
-
-    function tirarAcentos(string) {
-        return string.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    }
-
-    function searchLivro(input) {
-        let valor_input = input.value  
-
-        if (valor_input.length >= 3) {
-            console.log(tirarAcentos(valor_input))
-            caixa_resultado.style.display = 'inline';
-
-
-        } else {
-            caixa_resultado.style.display = 'none';
-        }
-    }
-
-</script>
