@@ -6,7 +6,7 @@
 
 <!-- TABELA ALUNOS -->
 <h2>Alunos</h2>
-
+<a href="?pagina=form_aluno"><button class="cadastrar">Cadastrar aluno</button></a>
 <table>
     <tr>
       <th>RM</th>            <!-- 1 -->
@@ -23,6 +23,10 @@
 
    <?php 
         while ($linha = mysqli_fetch_array($consulta_alunos)) {
+            // $data = $linha['DATA_NASC'];
+            
+            echo date_format("2000-12-4", 'Y-m-d H:i:s');
+
             echo "<tr>";
                 echo '<td>'.$linha["RM"].'</td>';
                 echo '<td>'.$linha["NOME"].'</td>';
@@ -38,5 +42,3 @@
         }
    ?>   
 </table>
-
-<a href="?pagina=form_aluno"><button class="cadastrar">Cadastrar aluno</button></a>
