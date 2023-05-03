@@ -23,21 +23,19 @@
 
    <?php 
         while ($linha = mysqli_fetch_array($consulta_alunos)) {
-            // $data = $linha['DATA_NASC'];
-            
-            echo date_format("2000-12-4", 'Y-m-d H:i:s');
+            $data_nasc = new DateTimeImmutable($linha['DATA_NASC']);
 
             echo "<tr>";
-                echo '<td>'.$linha["RM"].'</td>';
-                echo '<td>'.$linha["NOME"].'</td>';
-                echo '<td>'.$linha["TELEFONE"].'</td>';
-                echo '<td>'.$linha["DATA_NASC"].'</td>';
-                echo '<td>'.$linha["EMAIL"].'</td>';
-                echo '<td>'.$linha["SENHA"].'</td>';
-                echo '<td>'.$linha["CURSO"].'</td>';
-                echo '<td>'.$linha["SERIE"].'</td>';
-                echo '<td>'.$linha["ANO_INGRESSO"].'</td>';
-                echo '<td>'.$linha["PERIODO"].'</td>';
+                echo '<td>' . $linha["RM"] . '</td>';
+                echo '<td>' . $linha["NOME"] . '</td>';
+                echo '<td>' . $linha["TELEFONE"] . '</td>';
+                echo '<td>' . $data_nasc->format('d/m/Y') .'</td>';
+                echo '<td>' . $linha["EMAIL"] . '</td>';
+                echo '<td>' . $linha["SENHA"] . '</td>';
+                echo '<td>' . $linha["CURSO"] . '</td>';
+                echo '<td>' . $linha["SERIE"] . '</td>';
+                echo '<td>' . $linha["ANO_INGRESSO"] . '</td>';
+                echo '<td>' . $linha["PERIODO"] . '</td>';
             echo "</tr>";
         }
    ?>   

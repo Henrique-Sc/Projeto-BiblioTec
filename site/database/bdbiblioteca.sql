@@ -3,7 +3,7 @@ USE BDBIBLIOTECA;
 CREATE TABLE ALUNO(
 	RM INT NOT NULL,
     NOME VARCHAR(60) NOT NULL,
-    TELEFONE VARCHAR(14) NOT NULL, -- (11)94444-7777
+    TELEFONE VARCHAR(15) NOT NULL, -- (11) 94444-7777
     DATA_NASC DATE NOT NULL,
     EMAIL VARCHAR(100) NOT NULL,
     SENHA VARCHAR(32) NOT NULL,
@@ -37,12 +37,12 @@ CREATE TABLE EMPRESTIMO(
 );
 
 INSERT INTO aluno (RM, NOME, TELEFONE, DATA_NASC, EMAIL, SENHA, CURSO, SERIE, ANO_INGRESSO, PERIODO) VALUES 
-('21005', 'Maria Eduarda da Silva', '(11)4488-1234', '2005-02-21', 'mariaduda@email.com', '123456789', 'MTEC Informática para Internet', '3', 2021, 'Tarde'),
-('21258', 'João de Souza Santos', '(11)4444-8965', '2005-04-02', 'joaozinho@hmail.com', '987654321', 'MTEC Administração', '3', 2021, 'Manhã'),
-('22853', 'Ana Carolina de Oliveira', '(11)98855-9632', '2006-08-12', 'aninha@email.com', '7532159', 'MTEC Infomática para Internet', '2', 2022, 'Tarde'),
-('22145', 'José Lopes', '(11)98768-0900', '2006-08-22', 'zezino@outlook.com', '123321123', 'MTEC Administração', '2', 2022, 'Tarde'),
+('21005', 'Maria Eduarda da Silva', '(11) 4488-1234', '2005-02-21', 'mariaduda@email.com', '123456789', 'MTEC Informática para Internet', '3', 2021, 'Tarde'),
+('21258', 'João de Souza Santos', '(11) 4444-8965', '2005-04-02', 'joaozinho@hmail.com', '987654321', 'MTEC Administração', '3', 2021, 'Manhã'),
+('22853', 'Ana Carolina de Oliveira', '(11) 98855-9632', '2006-08-12', 'aninha@email.com', '7532159', 'MTEC Infomática para Internet', '2', 2022, 'Tarde'),
+('22145', 'José Lopes', '(11) 98768-0900', '2006-08-22', 'zezino@outlook.com', '123321123', 'MTEC Administração', '2', 2022, 'Tarde'),
 ('23256', 'Joana Santos Silva', '', '2000-06-04', 'joana@gmail.com', '987456321', 'Técnico em Administração', '1', 2023, 'Noite'),
-('20023', 'Ygor Santana', '(11)98765-1234', '2004-06-06', 'yguinho@outlook.com', '741258963', 'MTEC Informática para Internet', '3', 2020, 'Manhã');
+('20023', 'Ygor Santana', '(11) 98765-1234', '2004-06-06', 'yguinho@outlook.com', '741258963', 'MTEC Informática para Internet', '3', 2020, 'Manhã');
 
 INSERT INTO livro (ID_LIVRO, ISBN, TITULO, AUTOR, EDITORA, GENERO, ANO, EXEMPLAR, SITUACAO) VALUES
 (1, '978-8589384780', 'Governança de TI - Tecnologia da Informação', 'Peter Weill e Jeanne W. Ross', 'M.Books; 1ª edição', 'TI', 2005, 2, 'Disponível'),

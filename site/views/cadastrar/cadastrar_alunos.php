@@ -15,6 +15,7 @@ $anoingr = $_POST['anoingr'];
 $perio = $_POST['perio'];
 $email = $_POST['email'];
 
+
 $query = "INSERT INTO aluno (RM, NOME, TELEFONE, DATA_NASC, EMAIL, SENHA, CURSO, SERIE, ANO_INGRESSO, PERIODO) VALUES ($rm,'$nome',$tel,$nasc,'$email',$psw,'$crso','$serie',$anoingr,'$perio')";
 //executar comando na conexão estabelecida
 mysqli_query($conexao,$query);

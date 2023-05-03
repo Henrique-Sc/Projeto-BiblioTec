@@ -4,7 +4,7 @@
 ?>
 
 <h2>Empréstimos</h2>
-
+<a href="?pagina=form_emprestimo"><button class="cadastrar">Cadastrar emprestimo</button></a>
 <table>
     <!-- TÍTULOS -->
    <tr>
@@ -20,12 +20,15 @@
    <?php
     
     while ($linha = mysqli_fetch_array($consulta_emprestimos)) {
+        $data_retirada = new DateTimeImmutable($linha[3]);
+        $data_devolucao = new DateTimeImmutable($linha[4]);
+        
         echo "<tr>";
             echo "<td>". $linha[0] ."</td>";
             echo "<td>". $linha[1] ."</td>";
             echo "<td>". $linha[2] ."</td>";
-            echo "<td>". $linha[3] ."</td>";
-            echo "<td>". $linha[4] ."</td>";
+            echo "<td>". $data_retirada->format('d/m/Y') ."</td>";
+            echo "<td>". $data_devolucao->format('d/m/Y') ."</td>";
             echo "<td>". $linha[5] ."</td>";
 
             if ($linha[6] == null) {
@@ -37,5 +40,3 @@
     }
    ?>
 </table>
-
-<a href="?pagina=form_emprestimo"><button class="cadastrar">Cadastrar emprestimo</button></a>
