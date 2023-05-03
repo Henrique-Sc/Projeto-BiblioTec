@@ -1,4 +1,23 @@
-/* Estilos para o formulário de cadastro de livros */
+
+form {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input, select {
+  width: 100%;
+}
+
+label, input, select {
+  display: block;
+}
+
+label {
+  margin-top: 20px;
+  text-align: left;
+}
+/* Estilos para o formulário de cadastro de livros
 .form-group {
   margin-bottom: 20px;
   display: flex;
@@ -11,7 +30,7 @@
   color: #666;
 }
 
-.form-group input[type=text], .form-group select, .form-group input[type=date] {
+.form-group input, select {
   padding: 10px;
   font-size: 16px;
   border: none;
@@ -20,20 +39,21 @@
   color: #666;
 }
 
-.form-group input[type=text]:focus, .form-group select:focus, .form-group input[type=date]:focus {
+.form-group input:focus {
   outline: none;
   box-shadow: 0px 0px 5px #aaa;
 }
 
-.form-group select {
+/* .form-group select {
   -moz-appearance: none;
   -webkit-appearance: none;
   background-image: url('https://cdn.icon-icons.com/icons2/2108/PNG/512/arrow_down_icon_130987.png');
   background-repeat: no-repeat;
   background-position: right 10px center;
   background-size: 20px;
-}
+} */
 
+/*
 .form-group button[type=submit] {
   display: inline-block;
   background-color: #333;
@@ -50,19 +70,14 @@
   background-color: #555;
 }
 
-/* Estilos para o formulário como um todo */
 form {
   max-width: 500px;
   margin: 0 auto;
   text-align: center;
 }
 
-body {
-  background-color: #fff;
-  color: #333;
-}
 
-/* Estilos para o hover */
+
 .form-group input[type=text]:hover, .form-group select:hover, .form-group input[type=date]:hover {
   box-shadow: 0px 0px 5px #aaa;
 }
@@ -75,4 +90,4 @@ body {
 .form-group input[type=text]:focus + label, .form-group select:focus + label, .form-group input[type=date]:focus + label {
   color: #666;
   transition: color 0.3s ease-in-out;
-}
+} */
