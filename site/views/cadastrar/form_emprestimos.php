@@ -1,6 +1,6 @@
 <?php 
-    $sql = 'SELECT * FROM LIVRO.TITULO';
-    $consulta_livro = mysqli_query($conexao, $sql);
+    $query = "SELECT ID_LIVRO, LIVRO.TITULO FROM LIVRO";
+    $consulta_livros = mysqli_query($conexao, $query);
 ?>
 
 <form action="views/cadastrar/cadastrar_emprestimos.php" method="post">
@@ -8,33 +8,28 @@
 
     <!-- Títulos dos livros -->
     <div class="form-group">
-        <!-- <input type="text" name="" id="" placeholder="Título do livro"required> -->
-        <select name="" id="">
+        <select name="titulo_livro" required>
             <?php
-                while ($linha = mysqli_fetch_array($consulta_livro)) {
-                    echo "<option>1</option>";
+                while ($linha = mysqli_fetch_array($consulta_livros)) {
+                    echo "<option value='$linha[0]'>$linha[1]</option>";
                 }
+
             ?>
         </select>
-        
     </div>
 
     <!-- RM -->
     <div class="form-group">
-        <input type="text" name="" id="" placeholder="RM" required>
-    </div>
-
-    <!-- Nome -->
-    <div class="form-group">
-        <input type="text" name="" id="" placeholder="Nome" required>
+        <input type="number" name="rm_aluno" id="" placeholder="RM do aluno" required>
     </div>
 
     <!-- Data de devolução -->
     <div class="form-group">
-        <input type="date" name="" id="data_devolucao" required>
+        <label for="data_devolucao">Data de devolução</label>
+        <input type="date" name="data_devolucao" id="data_devolucao" placeholder="" required>
     </div>
     
     <div class="form-group">
-        <button type="submit">Enviar</button>
+        <input type="submit" value="Enviar"/>
     </div>
 </form>
