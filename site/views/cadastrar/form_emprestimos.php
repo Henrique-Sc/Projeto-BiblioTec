@@ -11,6 +11,8 @@
         <select name="titulo_livro" required>
             <?php
                 while ($linha = mysqli_fetch_array($consulta_livros)) {
+                    // linha[0] -> id_livro
+                    // linha[1] -> titulo_livro
                     echo "<option value='$linha[0]'>$linha[1]</option>";
                 }
 
