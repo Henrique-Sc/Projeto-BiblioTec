@@ -1,5 +1,5 @@
 
-<form action="views/cadastrar/cadastrar_livros.php" method="post">
+<form action="cadastrar/cadastrar_livros.php" method="post">
     <h2>Cadastro de Livros</h2>
     
     <div class="form-group">

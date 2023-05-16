@@ -3,7 +3,10 @@
     $consulta_livros = mysqli_query($conexao, $query);
 ?>
 
-<form action="views/cadastrar/cadastrar_emprestimos.php" method="post">
+<?php 
+// echo htmlspecialchars($_SERVER['PHP_SELF']) . "?pagina=form_emprestimo" 
+?>
+<form action="cadastrar/cadastrar_emprestimos.php" method="post">
     <h2>Cadastro de emprestimo</h2>
 
     <!-- Títulos dos livros -->

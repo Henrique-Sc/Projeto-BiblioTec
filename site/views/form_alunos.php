@@ -13,36 +13,58 @@
 </head>
 
 <body>
-    <form action="views/cadastrar/cadastrar_alunos.php" method="post">
+    <form action="cadastrar/cadastrar_alunos.php" method="post">
         <h2>Cadastro de aluno</h2>
+
+        <!-- 
+            Curso, Série e
+         -->
         
+        <!-- Nome -->
         <div class="form-group">
             <input type="text" name="nome" id="" placeholder="Nome">
         </div>
+
+        <!-- Email -->
         <div class="form-group">
             <input type="text" name="email" id="" placeholder="Email">
         </div>
+
+        <!-- Senha -->
         <div class="form-group">
             <input type="text" name="psw" id="" placeholder="Senha">
         </div>
+        
+        <!-- Data de nascimento -->
         <div class="form-group">
-            <input type="text" name="nasc" id="" placeholder="dd/mm/aaaa" required> <!-- dd/mm/aaaa -->
+            <label for="nasc">Data de nascimento</label>
+            <input type="date" name="nasc" id="nasc" placeholder="dd/mm/aaaa" required>  <!-- dd/mm/aaaa -->
         </div>
+
+        <!-- Telefone -->
         <div class="form-group">
-            <input type="text" name="tel" id="" placeholder="Telefone"> <!-- (11) 12345-1234 -->
+            <input type="text" name="tel" id="" placeholder="Telefone">              <!-- (11) 12345-1234 -->
         </div>
+
+        <!-- RM -->
         <div class="form-group">
             <input type="text" name="rm" id="" placeholder="RM">
         </div>
+
+        <!-- Curso -->
         <div class="form-group">
             <input type="text" name="crso" id="" placeholder="Curso">
         </div>
+
+        <!-- Série -->
         <div class="form-group">
             <input type="text" name="serie" id="" placeholder="Série">
         </div>
+
         <div class="form-group">
-            <input type="text" name="anoingr" id="" placeholder="Ano de ingresso">
+            <input type="number" name="anoingr" id="" placeholder="Ano de ingresso">
         </div>
+
         <div class="form-group">
             <input type="text" name="perio" id="" placeholder="Período">
         </div>

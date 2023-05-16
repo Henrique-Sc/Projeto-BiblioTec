@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="estilos/base-site.css">
     <link rel="stylesheet" href="estilos/table.css">
     <link rel="stylesheet" href="estilos/form.css">
+    <link rel="stylesheet" href="estilos/produtos.css">
 
 
     <script src="https://kit.fontawesome.com/55197c00fe.js" crossorigin="anonymous"></script>
@@ -45,13 +46,13 @@
                     break;
                 
                 case 'form_aluno':
-                    include_once('views/cadastrar/form_alunos.php');
+                    include_once('views/form_alunos.php');
                     break;
                 case 'form_livro':
-                    include_once('views/cadastrar/form_livros.php');
+                    include_once('views/form_livros.php');
                     break;
                 case 'form_emprestimo':
-                    include_once('views/cadastrar/form_emprestimos.php');
+                    include_once('views/form_emprestimos.php');
                     break;
                     
                 default:
