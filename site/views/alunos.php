@@ -19,6 +19,7 @@
       <th>SERIE</th>         <!-- 8 -->
       <th>ANO_INGRESSO</th>  <!-- 9 -->
       <th>PERIODO</th>       <!-- 10 -->
+      <th>DELETAR</th>       <!-- 11 -->
    </tr>
 
    <?php 
@@ -36,7 +37,11 @@
                 echo '<td>' . $linha["SERIE"] . '</td>';
                 echo '<td>' . $linha["ANO_INGRESSO"] . '</td>';
                 echo '<td>' . $linha["PERIODO"] . '</td>';
-            echo "</tr>";
+                echo '<td><a href="deleta_alunos.php?rm='. $linha["RM"]. '">Deletar</a></td>';
         }
    ?>   
+    </tr>
+   <?php
+   
+   ?>
 </table>
