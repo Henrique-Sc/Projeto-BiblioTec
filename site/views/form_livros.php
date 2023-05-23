@@ -1,5 +1,5 @@
 
-<form action="cadastrar/cadastrar_livros.php" method="post">
+<form action="cadastrar/cadastrar_livros.php" class="formu" method="post">
     <h2>Cadastro de Livros</h2>
     
     <div class="form-group">
@@ -30,7 +30,7 @@
         </select>
     </div>
     <div class="form-group">
-        <button type="submit">Enviar</button>
+        <button class="btnform" type="submit">Enviar</button>
     </div>
 </form>
             
