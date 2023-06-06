@@ -1,5 +1,5 @@
 <?php
-    $query = "SELECT livro.titulo, aluno.rm, aluno.nome, emprestimo.data_retirada, emprestimo.data_devolucao, emprestimo.situacao, emprestimo.multa from livro, aluno, emprestimo WHERE (emprestimo.id_livro = livro.id_livro) AND (emprestimo.rm = aluno.rm)";
+    $query = "SELECT livro.titulo, aluno.rm, aluno.nome, emprestimo.data_retirada, emprestimo.data_devolucao, emprestimo.situacao, emprestimo.multa, emprestimo.id_emp from livro, aluno, emprestimo WHERE (emprestimo.id_livro = livro.id_livro) AND (emprestimo.rm = aluno.rm)";
     $consulta_emprestimos = mysqli_query($conexao, $query);
 ?>
 
@@ -15,6 +15,7 @@
       <th>Data de devolução</th>  <!-- 5 -->
       <th>Situação</th>           <!-- 6 -->
       <th>Multa</th>              <!-- 7 -->
+      <th>Deletar</th>            <!-- 8 -->
    </tr>
 
    <?php
@@ -36,7 +37,9 @@
             } else {
                 echo "<td>R$ ". str_replace('.', ',', number_format($linha[6], 2)) ."</td>";
             }
+            echo '<td><a href="deletar/deleta_emprestimo.php?id_emp='. $linha[7]. '">Deletar</a></td>';
         echo "</tr>";
+
     }
    ?>
 </table>
