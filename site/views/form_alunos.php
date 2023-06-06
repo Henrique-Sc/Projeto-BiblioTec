@@ -1,6 +1,5 @@
 <?php 
     if (!isset($_GET['edt_livro'])) {
-        
     }
 ?>
 
