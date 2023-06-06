@@ -5,11 +5,11 @@
 
     $query = "SELECT * FROM EMPRESTIMO WHERE id_livro = $id_livro";
     $consulta_livros = mysqli_query($conexao, $query);
-
     if (mysqli_fetch_row($consulta_livros) != NULL) {
         echo "
-            <script>
-                alert('Não é possível deletar! Existe um empréstimo neste livro')
+        <script>
+        alert('Não é possível deletar! Existe um empréstimo neste livro')
+            
                 
                 window.location='../?pagina=livros';
             </script>
