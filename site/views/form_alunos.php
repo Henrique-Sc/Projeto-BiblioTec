@@ -1,78 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+    if (!isset($_GET['edt_livro'])) {
+        
+    }
+?>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<form action="cadastrar/cadastrar_alunos.php" class="formu" method="post">
+    <h2>Cadastro de aluno</h2>
 
-    <script>
+    <!-- Nome -->
+    <input type="text" name="nome" id="" placeholder="Nome">
 
-    </script>
-</head>
+    <!-- Email -->
+    <input type="text" name="email" id="" placeholder="Email">
 
-<body>
-    <form action="cadastrar/cadastrar_alunos.php" class="formu" method="post">
-        <h2>Cadastro de aluno</h2>
+    <!-- Senha -->
+    <input type="text" name="psw" id="" placeholder="Senha">
 
-        <!-- 
-            Curso, Série e
-         -->
-        
-        <!-- Nome -->
-        
-            <input type="text" name="nome" id="" placeholder="Nome">
-        
+    <!-- Data de nascimento -->
+    <label for="nasc">Data de nascimento</label>
+    <input type="date" name="nasc" id="nasc" placeholder="dd/mm/aaaa" required> <!-- dd/mm/aaaa -->
 
-        <!-- Email -->
-        
-            <input type="text" name="email" id="" placeholder="Email">
-        
+    <!-- Telefone -->
+    <input type="text" name="tel" id="" placeholder="Telefone"> <!-- (11) 12345-1234 -->
 
-        <!-- Senha -->
-        
-            <input type="text" name="psw" id="" placeholder="Senha">
-        
-        
-        <!-- Data de nascimento -->
-        
-            <label for="nasc">Data de nascimento</label>
-            <input type="date" name="nasc" id="nasc" placeholder="dd/mm/aaaa" required>  <!-- dd/mm/aaaa -->
-        
+    <!-- RM -->
+    <input type="text" name="rm" id="" placeholder="RM">
 
-        <!-- Telefone -->
-        
-            <input type="text" name="tel" id="" placeholder="Telefone">              <!-- (11) 12345-1234 -->
-        
 
-        <!-- RM -->
-        
-            <input type="text" name="rm" id="" placeholder="RM">
-        
-
-        <!-- Curso -->
-        
-            <input type="text" name="crso" id="" placeholder="Curso">
-        
-
-        <!-- Série -->
-        
-            <input type="text" name="serie" id="" placeholder="Série">
-        
-
-        
-            <input type="number" name="anoingr" id="" placeholder="Ano de ingresso">
-        
-
-        
-            <input type="text" name="perio" id="" placeholder="Período">
-        
-
+    <!-- Curso -->
+    <select name="crso" id="">
+        <option value="MTEC Administração">MTEC Administração</option>
+        <option value="MTEC Informática para Internet">MTEC Informática para Internet</option>
+        <option value="MTEC Logística">MTEC Logística</option>
+        <option value="Técnico em Administração">Técnico em Administração</option>
+        <option value="Técnico em Desenvolvimento de Sistemas">Técnico em Desenvolvimento de Sistemas</option>
+    </select>
     
-        <button class="btnform" type="submit">Enviar</button>
-    </div>
-    </form>
-</body>
+    <!-- Série -->
+    <select name="serie" id="">
+        <option value="1">1º ano</option>
+        <option value="2">2º ano</option>
+        <option value="3">3º ano</option>
+    </select>
+    
+    <input type="" name="anoingr" id="" placeholder="Ano de ingresso">
+    
+    <select name="perio" id="">
+        <option value="Manhã">Manhã</option>
+        <option value="Tarde">Tarde</option>
+        <option value="Noite">Noite</option>
+    </select>
 
-</html>
+    <button class="btnform" type="submit">Enviar</button>
+    </div>
+</form>
