@@ -30,11 +30,18 @@
 
     <!-- Data de devolução -->
     <div class="form-group">
-        <label for="data_devolucao">Data de devolução</label>
-        <input type="date" name="data_devolucao" id="data_devolucao" placeholder="" required>
+        <label for="data-devolucao">Data de devolução</label>
+        <input type="date" name="data_devolucao" id="data-devolucao" placeholder="" required>
     </div>
     
     <div class="form-group">
         <button class="btnform" type="submit">Enviar</button>
     </div>
 </form>
+
+
+<script>
+    // new Date().toLocaleDateString('fr-ca')
+    let data_devol = document.querySelector('#data-devolucao')
+    data_devol.min = new Date().toLocaleDateString('fr-ca')
+</script>

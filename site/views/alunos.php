@@ -38,7 +38,7 @@
                 echo '<td>' . $linha["SERIE"] . '</td>';
                 echo '<td>' . $linha["ANO_INGRESSO"] . '</td>';
                 echo '<td>' . $linha["PERIODO"] . '</td>';
-                echo '<td><a href="?pagina=form_aluno&edt_livro='. $linha["RM"]. '">Editar</a></td>';
+                echo '<td><a href="?pagina=form_aluno&edt_aluno='. $linha["RM"]. '">Editar</a></td>';
                 echo '<td><a href="deletar/deleta_aluno.php?rm='. $linha["RM"]. '">Deletar</a></td>';
         }
    ?>   

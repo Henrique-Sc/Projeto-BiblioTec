@@ -1,5 +1,5 @@
 <?php 
-    if (!isset($_GET['edt_livro'])) {
+    if (!isset($_GET['edt_aluno'])) {
     
 ?>
 
@@ -20,7 +20,7 @@
     <input required type="date" name="nasc" id="nasc"placeholder="dd/mm/aaaa" required> <!-- dd/mm/aaaa -->
 
     <!-- Telefone -->
-    <input required type="text" name="tel" id=""placeholder="Telefone"> <!-- (11) 12345-1234 -->
+    <input type="text" name="tel" id=""placeholder="Telefone"> <!-- (11) 12345-1234 -->
 
     <!-- RM -->
     <input required type="text" name="rm" id=""placeholder="RM">
@@ -56,7 +56,7 @@
 
 <?php 
 } else {
-        $query = "SELECT * FROM ALUNO WHERE RM = '". $_GET['edt_livro'] . "'";
+        $query = "SELECT * FROM ALUNO WHERE RM = '". $_GET['edt_aluno'] . "'";
         $consulta_alunos = mysqli_query($conexao, $query);
         $linha = mysqli_fetch_row($consulta_alunos);
         // var_dump($linha);
@@ -81,10 +81,10 @@
         <input required type="date" name="nasc" id="nasc"placeholder="dd/mm/aaaa" required value="<?php echo $linha["3"] ?>"> <!-- dd/mm/aaaa -->
     
         <!-- Telefone -->
-        <input required type="text" name="tel" id=""placeholder="Telefone" value="<?php echo $linha["2"] ?>"> <!-- (11) 12345-1234 -->    
+        <input type="text" name="tel" id=""placeholder="Telefone" value="<?php echo $linha["2"] ?>"> <!-- (11) 12345-1234 -->    
     
         <!-- Curso -->
-        <select name="crso" id="">
+        <select name="crso" id="" autofocus="">
             <option value="MTEC Administração">MTEC Administração</option>
             <option value="MTEC Informática para Internet">MTEC Informática para Internet</option>
             <option value="MTEC Logística">MTEC Logística</option>
