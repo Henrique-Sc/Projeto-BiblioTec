@@ -63,7 +63,7 @@
     ?>
     
     <form action="editar/editar_alunos.php" class="formu" method="post">
-        <h2>Cadastro de aluno</h2>
+        <h2>Editar aluno</h2>
 
         <input type="hidden" name="rm" value="<?php echo $linha["0"] ?>">
     
