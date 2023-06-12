@@ -39,9 +39,7 @@
     </div>
 </form>
 
-
 <script>
-    // new Date().toLocaleDateString('fr-ca')
     let data_devol = document.querySelector('#data-devolucao')
     data_devol.min = new Date().toLocaleDateString('fr-ca')
 </script>
