@@ -54,7 +54,7 @@ if (!isset ($_GET["edt_livro"])){
         
         <input type="hidden" name="id_livro" value="<?php echo $linha[0] ?>">
         <div class="form-group">
-            <input type="text" name="isbn" placeholder="ISBN" value="<?php echo $linha[1];?>">
+            <input type="text" name="isbn" placeholder="ISBN" value="<?php echo $linha[1];?>" disabled>
         </div>
         <div class="form-group">
             <input type="text" name="titulo" placeholder="Título" value="<?php echo $linha[2];?>">

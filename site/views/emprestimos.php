@@ -15,7 +15,8 @@
       <th>Data de devolução</th>  <!-- 5 -->
       <th>Situação</th>           <!-- 6 -->
       <th>Multa</th>              <!-- 7 -->
-      <th>Deletar</th>            <!-- 8 -->
+      <th>Editar</th>            <!-- 8 -->
+      <th>Deletar</th>            <!-- 9 -->
    </tr>
 
    <?php
@@ -31,13 +32,8 @@
             echo "<td>". $data_retirada->format('d/m/Y') ."</td>";
             echo "<td>". $data_devolucao->format('d/m/Y') ."</td>";
             echo "<td>". $linha[5] ."</td>";
-
-            if ($linha[6] == null) {
-                echo "<td>R$ 0,00</td>";
-            } else {
-                echo "<td>R$ ". str_replace('.', ',', number_format($linha[6], 2)) ."</td>";
-            }
-            echo '<td><a href="deletar/deleta_emprestimo.php?id_emp='. $linha[7]. '">Deletar</a></td>';
+            if ($linha[6] == null) {echo "<td>R$ 0,00</td>";} else {echo "<td>R$ ". str_replace('.', ',', number_format($linha[6], 2)) ."</td>";}
+            echo '<td><a href="?pagina=form_emprestimo&edt_emp='. $linha[7]. '">Editar</a></td>';
         echo "</tr>";
 
     }
