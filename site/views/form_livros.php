@@ -1,5 +1,5 @@
 <?php 
-if (!isset ($_GET ["edt_livro"])){
+if (!isset ($_GET["edt_livro"])){
 ?>
     <form action="cadastrar/cadastrar_livros.php" class="formu" method="post">
         <h2>Cadastro de Livros</h2>
@@ -47,11 +47,12 @@ if (!isset ($_GET ["edt_livro"])){
 
     $linha = mysqli_fetch_row($consulta_livros);
     
-    var_dump($linha);
+    
     ?>
-    <form action="cadastrar/cadastrar_livros.php" class="formu" method="post">
+    <form action="editar/editar_livros.php" class="formu" method="post">
         <h2>Editar Livro</h2>
         
+        <input type="hidden" name="id_livro" value="<?php echo $linha[0] ?>">
         <div class="form-group">
             <input type="text" name="isbn" placeholder="ISBN" value="<?php echo $linha[1];?>">
         </div>
