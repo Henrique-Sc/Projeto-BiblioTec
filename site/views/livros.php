@@ -18,7 +18,9 @@
       <th>Ano</th>         <!-- 6 -->
       <th>Exemplares</th>  <!-- 7 -->
       <th>Situação</th>    <!-- 8 -->
+      <th>Editar</th>
       <th>Deletar</th>
+
    </tr>
 
    <?php
@@ -32,6 +34,7 @@
             echo '<td>'.$linha['ANO'].'</td>';       // 6
             echo '<td>'.$linha['EXEMPLAR'].'</td>';  // 7
             echo '<td>'.$linha['SITUACAO'].'</td>';  // 8
+            echo '<td><a href="?pagina=form_livro&edt_livro='. $linha["ID_LIVRO"]. '">Editar</a></td>';
             echo '<td><a href="deletar/deleta_livros.php?id_livro='. $linha["ID_LIVRO"]. '">Deletar</a></td>';
          echo '</tr>';
       }
