@@ -16,7 +16,6 @@
       <th>Situação</th>           <!-- 6 -->
       <th>Multa</th>              <!-- 7 -->
       <th>Editar</th>            <!-- 8 -->
-      <th>Deletar</th>            <!-- 9 -->
    </tr>
 
    <?php

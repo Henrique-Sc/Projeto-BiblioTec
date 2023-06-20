@@ -56,7 +56,6 @@ if (!isset ($_GET["edt_emp"])){
     $consulta_emprestimo = mysqli_query($conexao, $query);
 
     $consulta = mysqli_fetch_row($consulta_emprestimo);
-    var_dump($consulta);
     ?>
        <form action="editar/editar_emprestimo.php" class="formu" method="post">
            <h2>Editar empréstimos</h2>
