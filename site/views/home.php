@@ -1,12 +1,23 @@
-<?php
+<!-- <h2>Home</h2> -->
 
-?>
-
-<h2>Home</h2>
-
+<!-- Login -->
+<div>
+  <h1 style="text-align: center;"> Bem-vindos a BíblioEtec</h1>
+  <br><br><br>
+  <h3 style="text-align: center;">Preencha os dados para fazer login</h3>
+  <br>
+  <form style="text-align: center;" method="post" action="login.php">
+    <input type="text" name="Usuário" placeholder="Nome do usuário">
+    <br>
+    <input type="password" name="Senha" placeholder="Digite a senha">
+    <br><br>
+    <input type="submit" value="Entrar">
+    <br><br><br><br>
+  </form>
+  </div>
+<!-- Login -->
 
 <!-- PRODUTOS -->
-
 <div class="produtos">
   <div class="product">
     <div class="imagem">

@@ -24,9 +24,16 @@
     <main>
         
         <?php  
-            // Incluir as views (conteúdos)
-            if (isset($_GET['pagina'])) {
-                $pagina = $_GET['pagina'];
+
+        session_start ();
+
+            if (isset($_SESSION['login'])){
+                // Incluir as views (conteúdos)
+                if (isset($_GET['pagina'])) {
+                    $pagina = $_GET['pagina'];
+                } else {
+                    $pagina = 'home';
+                }
             } else {
                 $pagina = 'home';
             }
@@ -59,6 +66,7 @@
                     include_once('views/error404.php');
                     break;
             }
+            
 
         ?>
     </main>
