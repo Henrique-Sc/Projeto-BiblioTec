@@ -22,6 +22,14 @@
     ?>
 
     <main>
+    <form style="text-align: center;" method="post" action="login.php">
+        <div class="form-group">
+            <input type="text" name="isbn" placeholder="ISBN">
+        </div>
+        <input type="text" name="Usuário" placeholder="Nome do usuário">
+        <input type="password" name="Senha" placeholder="Digite a senha">
+        <input type="submit" value="Entrar">
+    </form>
         
         <?php  
             // Incluir as views (conteúdos)
