@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="estilos/table.css">
     <link rel="stylesheet" href="estilos/form.css">
     <link rel="stylesheet" href="estilos/produtos.css">
+    <link rel="stylesheet" href="estilos/erro-msg.css">
 
 
     <script src="https://kit.fontawesome.com/55197c00fe.js" crossorigin="anonymous"></script>
@@ -17,22 +18,32 @@
 <body>
 
     <?php
+        session_start();
         include('database/db.php');
         include('navbar.php')
     ?>
 
-    <main>
-    <form style="text-align: center;" method="post" action="login.php">
-        <div class="form-group">
-            <input type="text" name="isbn" placeholder="ISBN">
-        </div>
-        <input type="text" name="Usuário" placeholder="Nome do usuário">
-        <input type="password" name="Senha" placeholder="Digite a senha">
-        <input type="submit" value="Entrar">
-    </form>
+    <main style="text-align: center">
         
         <?php  
+            /*
+            Verifica se a variável de sessão é true, caso seja,
+            pode verificar qual a página selecionada ou abre a página de empréstimos
+            caso contrário, continuará na página home para realizar login
+            */
             // Incluir as views (conteúdos)
+            if (isset($_SESSION['login']) ){
+                //Se não tiver clicado em nenhuma página ainda, carrega a pagina home.
+                if (isset($_GET['pagina'])){
+                    $pagina = $_GET['pagina'];
+                }
+                else {
+                    $pagina = 'emprestimos';
+                }
+            } else {
+                $pagina = 'home';
+            }
+
             if (isset($_GET['pagina'])) {
                 $pagina = $_GET['pagina'];
             } else {
@@ -61,6 +72,9 @@
                     break;
                 case 'form_emprestimo':
                     include_once('views/form_emprestimos.php');
+                    break;
+                case 'logout':
+                    include_once('views/logout.php');
                     break;
                     
                 default:
