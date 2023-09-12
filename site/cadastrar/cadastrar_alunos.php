@@ -13,11 +13,12 @@
     $anoingr = input_post('anoingr');
     $perio = input_post('perio');
     $email = input_post('email');
-
+    $psw = md5($_POST['psw']);
     $query = "INSERT INTO aluno (RM, NOME, TELEFONE, DATA_NASC, EMAIL, SENHA, CURSO, SERIE, ANO_INGRESSO, PERIODO) VALUES ($rm, '$nome', '$tel', '$nasc', '$email' , '$psw' ,'$crso', '$serie', $anoingr,'$perio')";
     
     //executar comando na conexão estabelecida
     mysqli_query($conexao, $query);
+    
 
     //redirecionamento 
     header('location:../index.php?pagina=alunos');

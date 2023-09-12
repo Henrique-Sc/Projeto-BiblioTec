@@ -4,6 +4,7 @@
 
     $user = input_post('user');
     $password = input_post('password');
+    $password = md5($_POST['password']);
 
     //executa a consulta
     $query = "SELECT * FROM USUARIO WHERE nome = '$user' and senha = '$password'";
