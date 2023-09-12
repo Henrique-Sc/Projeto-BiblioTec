@@ -38,18 +38,11 @@
                     $pagina = $_GET['pagina'];
                 }
                 else {
-                    $pagina = 'emprestimos';
+                    $pagina = 'home';
                 }
             } else {
-                $pagina = 'home';
+                $pagina = 'login';
             }
-
-            if (isset($_GET['pagina'])) {
-                $pagina = $_GET['pagina'];
-            } else {
-                $pagina = 'home';
-            }
-
             switch ($pagina) {
                 case 'home':
                     include_once('views/home.php');
@@ -73,8 +66,11 @@
                 case 'form_emprestimo':
                     include_once('views/form_emprestimos.php');
                     break;
+                case 'login':
+                    include_once('views/login.php');
+                    break;
                 case 'logout':
-                    include_once('views/logout.php');
+                    header('Location: login/logout.php');
                     break;
                     
                 default:

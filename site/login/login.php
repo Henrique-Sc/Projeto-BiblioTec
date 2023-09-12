@@ -8,11 +8,10 @@
     //executa a consulta
     $query = "SELECT * FROM USUARIO WHERE nome = '$user' and senha = '$password'";
     $consulta = mysqli_query($conexao, $query);
-    
-    if (mysqli_fetch_row($consulta) >= 1) {
+    $usuario = mysqli_fetch_row($consulta);
+    if ($usuario >= 1) {
         session_start();
-        $_SESSION['login'] = true;
-        $_SESSION['usuario'] = $usuario;
+        $_SESSION['login'] = [$usuario[0], $usuario[1]];
 
         header('Location: ../index.php');
     }
@@ -22,7 +21,7 @@
         //Não pode fazer login, usuário ou senha inválidos
         //redirecionar para a página 
         //copiar no proximo index esses texto aq
-
+        
 ?>
 
 

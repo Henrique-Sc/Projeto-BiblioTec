@@ -1,39 +1,5 @@
 
 <h2>Home</h2>
-
-<?php
-  if (isset($_GET['erro'])){
-    echo '
-      <div class="erro-msg">
-        <span>Usuário ou Senha inválidos</span>
-      </div>
-    ';
-  }
-
-?>
-
-<!-- Login -->
-<?php
-  if (empty($_SESSION['login'])) {
-?>
-<form class="formu" method="post" action="views/login.php">
-  
-  <div class="form-group">
-    <input type="text" name="user" placeholder="Nome de usuário">
-  </div>
-
-  <div class="form-group">
-    <input type="password" name="password" placeholder="Digite a senha">
-  </div>
-
-  <div class="form-group">
-    <input type="submit" value="Entrar">
-  </div>
-</form>
-<?php 
-  } else {
-?>
-
 <!-- PRODUTOS -->
 
 <div class="produtos">
@@ -477,4 +443,3 @@
 
   </div>
 </div>
-<?php } ?>
