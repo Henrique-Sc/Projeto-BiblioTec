@@ -12,8 +12,14 @@
     <link rel="stylesheet" href="estilos/produtos.css">
     <link rel="stylesheet" href="estilos/erro-msg.css">
 
+    <link rel="stylesheet" href="http://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
 
     <script src="https://kit.fontawesome.com/55197c00fe.js" crossorigin="anonymous"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+    <script src="http://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 </head>
 <body>
 
@@ -48,13 +54,13 @@
                     include_once('views/home.php');
                     break;
                 case 'alunos':
-                    include_once('views/alunos.php');
+                    include_once('views/table_alunos.php');
                     break;
                 case 'livros':
-                    include_once('views/livros.php'); 
+                    include_once('views/table_livros.php'); 
                     break;
                 case 'emprestimos':
-                    include_once('views/emprestimos.php');
+                    include_once('views/table_emprestimos.php');
                     break;
                 
                 case 'form_aluno':

@@ -4,9 +4,6 @@
 ?>
 
 <?php 
-// echo htmlspecialchars($_SERVER['PHP_SELF']) . "?pagina=form_emprestimo" 
-?>
-<?php 
 if (!isset ($_GET["edt_emp"])){
 ?>
 <form action="cadastrar/cadastrar_emprestimos.php" class="formu" method="post">
